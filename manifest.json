@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Instructor Rating Extension",
+  "version": "1.0",
+  "description": "Display instructor ratings on uaconnect.uark.edu",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://uaconnect.uark.edu/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
